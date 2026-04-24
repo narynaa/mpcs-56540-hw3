@@ -1,12 +1,12 @@
-from models import Priority, Task, User
-from repositories import InMemoryTaskRepository, InMemoryUserRepository
-from reminders import NullReminderSender
-from services import AuthService, TaskService
+from src.models import Priority, Task, User
+from src.repositories import TaskRepository, UserRepository
+from src.reminders import NullReminderSender
+from src.services import AuthService, TaskService
 
 __all__ = [
     "AuthService",
-    "InMemoryTaskRepository",
-    "InMemoryUserRepository",
+    "TaskRepository",
+    "UserRepository",
     "NullReminderSender",
     "Priority",
     "Task",

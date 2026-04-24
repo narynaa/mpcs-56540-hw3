@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Protocol
 
-from models import Task, User
+from src.models import Task, User
 
 
 class ReminderSender(Protocol):

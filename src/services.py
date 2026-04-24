@@ -3,7 +3,7 @@ from __future__ import annotations
 from datetime import datetime
 from uuid import uuid4
 
-from exceptions import (
+from src.exceptions import (
     AuthenticationError,
     InvalidInputError,
     ReminderError,
@@ -11,9 +11,9 @@ from exceptions import (
     UnauthorizedTaskAccessError,
     UserAlreadyExistsError,
 )
-from models import Priority, Task, User
-from reminders import ReminderSender
-from repositories import TaskRepository, UserRepository
+from src.models import Priority, Task, User
+from src.reminders import ReminderSender
+from src.repositories import TaskRepository, UserRepository
 
 
 class AuthService:
